@@ -19,7 +19,7 @@
   
   /* Style for the navbar */
   .navbar {
-    background-color: #333;
+    background-color: #55a630;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,9 @@
     align-items: center;
     padding: 30px;
     
+  }
+  .navbar{
+    border-radius: 0 0 50px 50px;
   }
   a{
     text-decoration: none;
@@ -165,15 +168,15 @@
     width: 400px;
     padding:50px;
    // transform: translate(-50%, -50%); scale(1.25);
-    background: #777;
-    border-radius: 5px;
+    background: #52b69a;
+    border-radius: 100px;
     transition:left 0ms slide-in 250ms, 
                 opacity 200ms ease-in-out 0s,
                 transform 20ms ease-in-out 0s;
   }
 
   .Pop-up.active{
-  
+    border-radius: 100px;
     left: 65%;
     opacity: 1;
    // transform: translate(-50%, -50%); scale(1);
@@ -195,7 +198,9 @@
   }
 
   .Pop-up-regis{
+    background: #52b69a;
     position: absolute;
+    border-radius: 100px;
     top: 20%;
     left: -150%;
     opacity: 0;
@@ -204,14 +209,14 @@
     width: 400px;
     padding:50px;
    // transform: translate(-50%, -50%); scale(1.25);
-    background: #777;
-    border-radius: 5px;
+    
     transition:left 0ms slide-in 250ms, 
                 opacity 200ms ease-in-out 0s,
                 transform 20ms ease-in-out 0s;
   }
 
   .Pop-up-regis.active{
+
   
     left: 65%;
     opacity: 1;
