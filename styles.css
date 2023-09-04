@@ -30,6 +30,11 @@
   }
   .navbar{
     border-radius: 0 0 50px 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
   }
   .nav-login-regis{
     display: flex;
@@ -41,9 +46,10 @@
     color: white;
   }
   .brand-title{
-    
+    position: absolute;
     font-size: 1.5rem;
     color: #fff;
+    top: 10px;
     text-decoration: none;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
@@ -231,6 +237,15 @@
     transition:left 0ms slide-in 250ms, 
                 opacity 200ms ease-in-out 0s,
                 transform 20ms ease-in-out 0s;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add an ellipsis (...) when text overflows */
+    width: 100px; /* Adjust the width as needed */
   }
 
   .Pop-up-regis.active{
