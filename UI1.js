@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const regiscontainer = document.querySelector('.Pop-up-regis');
     const signin = document.querySelector('#signinbtn');
     const navregis = document.querySelector('#registernav');
+    const navlogin = document.querySelector('#loginnav');
     loginButton.addEventListener('click', () => {
       loginContainer.classList.add('active');
     });
@@ -25,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Background clicked');
         loginContainer.classList.remove('active');
         regiscontainer.classList.add('active');
+
+      });
+      navlogin.addEventListener('click', () => {
+        console.log('Background clicked');
+        loginContainer.classList.add('active');
+        regiscontainer.classList.remove('active');
 
       });
         signin.addEventListener('click', () => {

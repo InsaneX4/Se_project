@@ -31,6 +31,11 @@
   .navbar{
     border-radius: 0 0 50px 50px;
   }
+  .nav-login-regis{
+    display: flex;
+    flex-direction: row;
+    
+  }
   a{
     text-decoration: none;
     color: white;
@@ -55,6 +60,20 @@
     
     
   }
+
+  .logindiv-nav{
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  h3{
+    color: white;
+  }
+  .regisdiv-nav{
+    padding-right: 10px;
+    padding-top: 5px;
+
+  }
+  
   
   /* Style for each navigation item */
   .nav-item {
@@ -138,8 +157,7 @@
     position: relative;
     top: 50%;
     left: 40%;
-    justify-content: center;
-    width: 100px;
+    width: max-content;
     
   }
   .loginbtn:hover{
