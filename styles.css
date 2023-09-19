@@ -3,19 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    overflow: hidden;
    
     
   }
   
   body{
     
-    height: 100%;
-    background-image: url('pexels-lumn-1028599.jpg');
+    height: 100vh;
+    //background-image: url('pexels-lumn-1028599.jpg');
     background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+    
   }
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the video width to 100% of the viewport width */
+    height: 100%; /* Set the video height to 100% of the viewport height */
+    object-fit: cover; /* Maintain the video's aspect ratio while covering the entire viewport */
+    z-index: -1;
+}
   
   /* Style for the navbar */
   .navbar {
@@ -30,11 +38,6 @@
   }
   .navbar{
     border-radius: 0 0 50px 50px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
   }
   .nav-login-regis{
     display: flex;
@@ -46,10 +49,9 @@
     color: white;
   }
   .brand-title{
-    position: absolute;
+    
     font-size: 1.5rem;
     color: #fff;
-    top: 10px;
     text-decoration: none;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
@@ -200,9 +202,13 @@
   }
 
   .Pop-up.active{
+    
     border-radius: 100px;
+    top: 25%;
     left: 65%;
     opacity: 1;
+    width: 30%;
+
    // transform: translate(-50%, -50%); scale(1);
     transition:left 0ms ease-in-out 0ms, 
     opacity 200ms ease-in-out 0s,
@@ -238,21 +244,14 @@
                 opacity 200ms ease-in-out 0s,
                 transform 20ms ease-in-out 0s;
   }
-  a{
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add an ellipsis (...) when text overflows */
-    width: 100px; /* Adjust the width as needed */
-  }
 
   .Pop-up-regis.active{
 
   
     left: 65%;
     opacity: 1;
+    top: 25%;
+    width: 30%;
    // transform: translate(-50%, -50%); scale(1);
     transition:left 0ms ease-in-out 0ms, 
     opacity 200ms ease-in-out 0s,
